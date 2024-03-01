@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <title>Encriptador-Alura</title>
+    </head>
+    <body>
+        <header class="header">
+            <canvas id=canvas></canvas>
+            <h1>Encriptador de Texto</h1>
+        </header>
+        <main class="main">
+            <section class="sectionUno">
+                <textarea id="introducirTexto" type="text" spellcheck="false" class="introducirTexto" placeholder="Ingresa texto aqui sin acentos" required></textarea>
+                <div class="cajaDeBotones">
+                    <button onclick="botonEncriptar();" class="botonEncriptar">Encriptar</button>
+                    <button onclick="botonDesencriptar();" class="botonDesencriptar">Desencriptar</button>
+                </div>
+            </section>
+            <section class="sectionDos">
+                <textarea id="textoEncriptado" spellcheck="false" class="textoEncriptado" required></textarea>
+                <div class="cajaCopiar">
+                    <button onclick="botonCopiar();" class="botonCopiar" type="button">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Desarrollado por Pacuino</p>
+            <div class="cajaIconos">
+                <div class="icon">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r=35></circle>
+                    </svg>
+                    <a href="https://www.linkedin.com/in/franciscocortesd" target="_blanck"><i class='bx bxl-linkedin-square'></i></a>
+                </div>
+                <div class="icon">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r=35></circle>
+                    </svg>
+                    <a href="https://github.com/Pacuino" target="_blanck"><i class='bx bxl-github'></i></a>
+                </div> 
+                <div class="icon">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r=35></circle>
+                    </svg>
+                    <a href="https://twitter.com/pacuino" target="_blanck"><i class='bx bxl-twitter'></i></a>
+                </div>
+                <div class="icon">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r=35></circle>
+                    </svg>
+                    <i class='bx bxl-youtube' ></i>
+                </div>
+                <div class="icon">
+                    <svg heigth="80" width="80">
+                        <circle cx="40" cy="40" r=35></circle>
+                    </svg>
+                    <a href="https://www.instagram.com/pacuino" target="_blanck"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

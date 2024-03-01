@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   font-family: "Anta", sans-serif;
+ 
+}
+
+#canvas{
+    width:100%;
+}
+
+header{
+    background-color: #0f0;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 50px;
+}
+
+h1{
+    padding: 16px 24px;
+    display: inline-block;
+    box-sizing: content-box;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(#0f0 33.33%, #008f11 66.67%, #003b00 100%);
+    display: flex;
+    padding: 15px;
+}
+
+.sectionUno{
+    align-items: center;
+}
+
+.introducirTexto{
+    background-color:transparent;
+    width:450px;
+    height: 230px;
+    margin-left: 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Anta", sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+    overflow: hidden;
+    resize: none;
+    padding: 15px;
+    text-transform: lowercase;
+}
+::placeholder{
+    color: rgba(0, 0, 0, 0.614);
+}
+
+.introducirTexto:focus{
+    outline: none;
+}
+
+.cajaDeBotones{
+    width: 600px;
+    margin:0 auto;  
+    padding: 7.5px;
+    display: inline-block;
+}
+
+.botonEncriptar{
+    color: aliceblue;
+    background-color: rgba(255, 0, 0, 0.911);
+    width: 40%;
+    padding: 16px 24px;
+    margin-top: 2rem;
+    margin-left: 28px;
+    font-size: 18px;
+    font-weight: lighter;
+    border-radius: 26px;
+    display: inline-block;
+    border: none;
+    transition:1s all;
+    font-family: "Anta", sans-serif;
+    cursor: pointer;
+}
+
+.botonEncriptar:hover{
+    background-color: darkred;
+    transform: scale(1.02);
+    /*transform: translate(0px, -10px) scale(1.05);*/
+}
+
+.botonDesencriptar{
+    color: aliceblue;
+    background-color: rgba(0, 72, 228, 0.887);
+    width: 40%;
+    padding: 16px 24px;
+    margin-top: 2rem;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight:lighter;
+    border-radius: 26px;
+    display: inline-block;
+    border:none;
+    transition:1s all;
+    font-family: "Anta", sans-serif;
+    cursor: pointer;
+}
+
+.botonDesencriptar:hover{
+    background-color: darkblue;
+    transform: scale(1.02);
+}
+
+.sectionDos{
+    align-items: center;
+}
+
+.textoEncriptado{
+    background-image: url(img/morfeo3.png);
+    background-repeat: no-repeat;
+    background-color:  #000;
+    background-position: center;
+    background-size: 80%;
+    width:400px;
+    height: 300px;
+    border: none;
+    border-radius: 6px;
+    font-size: 24px;
+    font-family: "Anta", sans-serif;
+    font-weight: lighter;
+    color: aliceblue;
+    overflow: hidden;
+    resize: none;
+    padding: 15px;
+    margin-left: 180px;
+    align-content: center;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;
+    cursor: none;
+}
+
+.textoEncriptado:focus{
+    outline: none;
+}
+
+.encriptado{
+    width:100px;
+    height: 100px;
+    border-radius: 10px;
+    align-self: center;
+
+}
+
+.cajaCopiar{
+    width: 600px;
+    margin:0 auto;  
+    padding: 20px;
+    display: inline-block;
+    align-content: center;
+}
+
+.botonCopiar{
+    color: aliceblue;
+    background-color: black;
+    width: 40%;
+    padding: 16px 24px;
+    margin-left: 255px;
+    font-size: 18px;
+    font-weight: lighter;
+    border-radius: 6px;
+    display: inline-block;
+    border:none;
+    transition:3s all;
+    font-family: "Anta", sans-serif;
+}
+
+.botonCopiar:hover{
+    background-color:aliceblue;
+    color: #000;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+footer{
+    background-color: hsl(120, 100%, 12%);
+    padding:16px 24px;
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+}
+
+p{
+    color: aliceblue;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.cajaIconos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.icon{
+    position:relative;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+circle{
+    stroke: aliceblue;
+    stroke-width: 4;
+    fill: none;
+}
+
+.icon:hover{
+    background-color: #0e76a8;
+    box-shadow: 0 0 20px #0e76a8;
+    
+}
+
+.icon:hover:nth-child(2){
+    background-color: black ;
+    box-shadow: 0 0 20px black;
+}
+
+.icon:hover:nth-child(3){
+    background-color: #00acee;
+    box-shadow: 0 0 20px #00acee;
+}
+
+.icon:hover:nth-child(4){
+    background-color: red;
+    box-shadow: 0 0 20px red;
+}
+
+.icon:hover:nth-child(5){
+    background-color: #E1306C;
+    box-shadow: 0 0 20px #E1306C;
+}
+
+.icon i{
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.7rem;
+}
+
+svg circle {
+    stroke-dasharray: 150;
+    transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+    stroke-dasharray: 220;
+}
