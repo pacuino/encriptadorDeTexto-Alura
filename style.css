@@ -265,7 +265,7 @@ svg circle {
     stroke-dasharray: 220;
 }
 
-@media (min-width:380px) and (max-width:1044px){
+@media (min-width:180px) and (max-width:1044px){
     h1{
         display: flex;
         justify-content: center;
