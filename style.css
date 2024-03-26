@@ -289,6 +289,7 @@ svg circle {
 
     .botonEncriptar, .botonDesencriptar{
         margin-left: 0;
+        font-size: 0.8rem;
     }
 
     .cajaDeBotones{
@@ -323,5 +324,10 @@ svg circle {
     .botonCopiar {
         margin: 0;
         padding: 20px 0;
+        font-size: 0.8rem;
+    }
+
+    footer {
+        height: 50vw;
     }
 }
