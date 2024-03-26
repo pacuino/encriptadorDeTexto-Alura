@@ -264,3 +264,64 @@ svg circle {
 .icon:hover circle {
     stroke-dasharray: 220;
 }
+
+@media (min-width:380px) and (max-width:1044px){
+    h1{
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    .main{
+        position: relative;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    .introducirTexto{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+    }
+
+    .botonEncriptar, .botonDesencriptar{
+        margin-left: 0;
+    }
+
+    .cajaDeBotones{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .textoEncriptado{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        background-image: none;
+    }
+
+    .cajaCopiar{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .botonCopiar {
+        margin: 0;
+        padding: 20px 0;
+    }
+}
